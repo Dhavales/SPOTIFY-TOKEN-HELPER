@@ -10,7 +10,7 @@ const REDIRECT_URI = 'https://spotify-token-helper-l56b3qyjp-dhavales-projects.v
 
 app.get('/login', (req, res) => {
     const scope = 'streaming user-read-email user-read-private user-modify-playback-state';
-    const authUrl = 'https://api.spotify.com/v1/albums/6i6folBtxKV28WX3msQ4FE2' +
+    const authUrl = 'https://accounts.spotify.com/authorize' +
         '?response_type=code' +
         '&client_id=' + CLIENT_ID +
         '&scope=' + encodeURIComponent(scope) +
