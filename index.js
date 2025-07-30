@@ -6,7 +6,7 @@ const app = express();
 const CLIENT_ID = '12022143668f4e30a77474aa03536505';
 const CLIENT_SECRET = 'cf3e7683f6854f17a67621372c6d2cb9';
 // This will be your Vercel URL later
-const REDIRECT_URI = 'https://spotify-token-helper-l56b3qyjp-dhavales-projects.vercel.app/callback'; 
+const REDIRECT_URI = 'https://spotify-token-helper.vercel.app/callback'; 
 
 app.get('/login', (req, res) => {
     const scope = 'streaming user-read-email user-read-private user-modify-playback-state';
